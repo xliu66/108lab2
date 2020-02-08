@@ -1,0 +1,27 @@
+<h1>Hello from Angular</h1>
+
+<h3>{{name}}</h3>
+
+<div>
+  {{userName}}
+  <input type="text" [(ngModel)]="userName">
+
+
+  <button (click)="calculate()">Calculate</button>
+  <button (click)="clear()">Clear form</button>
+
+</div>
+
+<hr>
+
+<app-temp-calculator></app-temp-calculator>
+
+<!-- inside this tag, all pages will be redered -->
+<router-outlet></router-outlet>
+
+<div>
+
+  This is the footer
+</div>
+
+<h4>This is below the router outlet</h4>
